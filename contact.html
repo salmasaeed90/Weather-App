@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="imgs/logo.png" />
+    <title>Weather</title>
+    <style>
+      .navbar .nav-item:hover:not(:last-child) {
+        color: var(--text-blue) !important;
+        border: 2px solid var(--text-blue) !important;
+        border-radius: 20px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-sm py-5">
+      <div class="container">
+        <img src="imgs/logo.png" alt="logo" class="img-fluid" />
+        <div class="logo-link">
+          <a class="navbar-brand text-white" href="#">Weather</a>
+          <a
+            href="#"
+            class="un-link text-white d-block text-decoration-none fw-lighter"
+            >tagline goes here</a
+          >
+        </div>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white home-link"
+                href="#"
+                aria-current="page"
+                >Home<span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white news-link" href="#">news</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white camera-link" href="#"
+                >lives cameras</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white photo-link" href="#">photo</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white contact-link active"
+                href="contact.html"
+                target="_blank"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

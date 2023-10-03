@@ -1,0 +1,201 @@
+:root {
+  /* footer+center div */
+  --dark-gray1: #262936;
+  /* input nav small background */
+  --dark-gray2: #1e202b;
+  /* div1-viv2 */
+  --dark-gray3: #323544;
+  /* bg dark title */
+  --dark-gray4: #222531;
+  /* bg light title */
+  --dark-gray5: #2d303d;
+  --text-gray: #8c8e92;
+  --bg-blue: #009adb;
+  --text-blue: #008dae;
+}
+
+/* start navbar */
+.navbar {
+  background-color: var(--dark-gray2);
+}
+.navbar .nav-item {
+  margin-right: 30px;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--text-blue) !important;
+  border: 2px solid var(--text-blue) !important;
+  border-radius: 20px !important;
+}
+.navbar .nav-item:hover:not(:first-child) {
+  color: var(--text-blue) !important;
+  border: 2px solid var(--text-blue) !important;
+  border-radius: 20px !important;
+}
+img {
+  width: 80px;
+  height: 80px;
+}
+.logo-link .un-link {
+  font-size: 10px;
+}
+/* body:has(.home:target) nav .navbar-nav .nav-link .home-link,
+body:has(.news:target) nav .navbar-nav .nav-link .news-link,
+body:has(.camera:target) nav .navbar-nav .nav-link .camera-link,
+body:has(.photo:target) nav .navbar-nav .nav-link .photo-link,
+body:has(.contact:target) nav .navbar-nav .nav-link .contact-link {
+  color: var(--text-blue) !important;
+  border: 2px solid var(--text-blue) !important;
+  border-radius: 20px !important;
+} */
+/* end navbar */
+
+/* sratr search section */
+.search {
+  background-image: url(../imgs/banner.png);
+  background-size: cover;
+  background-position: center;
+}
+.search .search-input {
+  background-color: var(--dark-gray2);
+  padding: 10px;
+  border-radius: 30px;
+  color: var(--text-gray);
+}
+.search .search-input input {
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+  color: var(--text-gray) !important;
+}
+.search .search-input input:focus {
+  border: none !important;
+  outline: none !important;
+}
+.search .search-input button {
+  transform: scale(1.2);
+  width: 100px;
+  background-color: var(--bg-blue);
+  font-size: 15px;
+  color: #fff;
+  /* padding: 0 10px; */
+}
+/* end search section */
+
+/* start weather section */
+.weather {
+  background-color: var(--dark-gray2);
+  color: #fff;
+}
+.today,
+.after-tomorrow {
+  background-color: var(--dark-gray3);
+}
+.tomorrow {
+  background-color: var(--dark-gray1);
+}
+.today,
+.tomorrow,
+.after-tomorrow {
+  transform: translateY(-130px);
+  /* width: 360px; */
+  border-radius: 10px;
+}
+/* today */
+.today-title {
+  background-color: var(--dark-gray5);
+  padding: 5px 15px;
+  border-radius: 10px 10px 0 0;
+  color: var(--text-gray);
+}
+.today .location {
+  padding-top: 15px;
+  color: var(--text-gray);
+}
+.today .temp span {
+  font-size: 80px;
+  font-weight: bold;
+}
+.today .weather-case,
+.tomorrow .tomorrow-weather-case,
+.after-tomorrow .after-tomorrow-weather-case {
+  color: var(--text-blue);
+}
+.today .items-case {
+  color: var(--text-gray);
+  font-size: 18px;
+}
+/* tomorrow */
+.tomorrow .tomorrow-title {
+  background-color: var(--dark-gray4);
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 10px 10px 0 0;
+  color: var(--text-gray);
+}
+/* after-tomorrow */
+.after-tomorrow .after-tomorrow-title {
+  background-color: var(--dark-gray5);
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 10px 10px 0 0;
+  color: var(--text-gray);
+}
+
+.today .major,
+.tomorrow .major,
+.after-tomorrow .major {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@media screen and(max-width:768px) {
+}
+/* end weather section */
+
+/* start footer section */
+footer {
+  background-color: var(--dark-gray1);
+}
+.subscribe-input {
+  background-color: var(--dark-gray2);
+  padding: 10px;
+  border-radius: 30px;
+}
+.subscribe-input input {
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+  color: var(--text-gray) !important;
+}
+.subscribe-input input:focus {
+  border: none !important;
+  outline: none !important;
+}
+.subscribe-input button {
+  transform: scale(1.2);
+  width: 100px;
+  background-color: var(--bg-blue);
+  font-size: 15px;
+  color: #fff;
+  /* padding: 0 10px; */
+}
+.subscribe-input button:hover {
+  background-color: var(--bg-blue);
+  color: #fff;
+  /* padding: 0 10px; */
+}
+.social {
+  color: var(--text-blue);
+}
+.social i {
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s;
+}
+.social i:hover {
+  color: #fff;
+  background-color: var(--text-blue) !important;
+}
+
+/* end footer section */

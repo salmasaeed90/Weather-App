@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="imgs/logo.png" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-sm py-5">
+      <div class="container">
+        <img src="imgs/logo.png" alt="logo" class="img-fluid" />
+        <div class="logo-link">
+          <a class="navbar-brand text-white" href="#">Weather</a>
+          <a
+            href="#"
+            class="un-link text-white d-block text-decoration-none fw-lighter"
+            >tagline goes here</a
+          >
+        </div>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white home-link"
+                href="#"
+                aria-current="page"
+                >Home<span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white news-link" href="#">news</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white camera-link" href="#"
+                >lives cameras</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white photo-link" href="#">photo</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white contact-link"
+                href="contact.html"
+                target="_blank"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- search input -->
+    <section class="search pt-3 pb-5">
+      <div class="container pb-5">
+        <div class="row pb-5">
+          <div class="search-input my-5 w-100 d-flex justify-content-between">
+            <input
+              type="text"
+              placeholder="Find Your location..."
+              id="search"
+              class="w-75"
+            />
+            <button class="btn rounded-5 me-2" id="find">Find</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- weather data show -->
+    <section class="weather">
+      <div class="container">
+        <div class="weather-body">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm">
+              <div class="today">
+                <div
+                  class="today-title d-flex align-items-baseline justify-content-between"
+                >
+                  <p class="first-day day">day</p>
+                  <span class="day-number ms-auto">30</span>
+                  <p class="date">date</p>
+                </div>
+                <div class="today-body p-3">
+                  <h5 class="location">location</h5>
+                  <div
+                    class="temp d-flex align-items-baseline justify-content-evenly"
+                  >
+                    <span class="temp-deg">29</span>
+                    <span><sup>o</sup>c</span>
+                    <img src="./imgs/113.png" class="weather-icon" alt="" />
+                  </div>
+                  <h5 class="weather-case">sunny</h5>
+                  <div class="items-case mt-5 d-flex justify-content-between">
+                    <span
+                      class="d-flex justify-content-center align-items-baseline"
+                    >
+                      <i class="fa-solid fa-umbrella me-3"></i>
+                      <span class="item-case1">20%</span>
+                    </span>
+                    <span
+                      class="d-flex justify-content-center align-items-baseline"
+                    >
+                      <i class="fa-solid fa-wind me-3"></i>
+                      <span class="item-case2"> 18km/h</span>
+                    </span>
+                    <span
+                      class="d-flex justify-content-center align-items-baseline"
+                    >
+                      <i class="fa-regular fa-compass me-3"></i>
+                      <span class="item-case3">East</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm">
+              <div class="tomorrow">
+                <div class="tomorrow-title">
+                  <p class="second-day">tomorrow</p>
+                </div>
+                <div class="tomorrow-body text-center p-5">
+                  <img src="./imgs/113.png" class="tomorrow-icon" alt="sunny" />
+                  <p class="major">
+                    <span class="major_temp">42</span>
+                    <span><sup>o</sup>c</span>
+                  </p>
+                  <p class="micro">
+                    <span class="micro_temp">27</span>
+                    <span><sup>o</sup>c</span>
+                  </p>
+                  <h5 class="tomorrow-weather-case">sunny</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm">
+              <div class="after-tomorrow">
+                <div class="after-tomorrow-title">
+                  <p class="third-day">after-tomorrow</p>
+                </div>
+                <div class="after-tomorrow-body text-center p-5">
+                  <img
+                    src="./imgs/113.png"
+                    class="after-tomorrow-icon"
+                    alt="sunny"
+                  />
+                  <p class="major">
+                    <span class="major_temp2">42</span>
+                    <span><sup>o</sup>c</span>
+                  </p>
+                  <p class="micro">
+                    <span class="micro_temp2">29</span>
+                    <span><sup>o</sup>c</span>
+                  </p>
+                  <h5 class="after-tomorrow-weather-case">sunny</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="contact">
+          <div class="row">
+            <div class="col-lg-9 col-sm-12">
+              <div
+                class="subscribe-input w-100 d-flex justify-content-between mb-5"
+              >
+                <input
+                  type="text"
+                  placeholder="Enter Your Email To Subscribe..."
+                  id="search"
+                />
+                <button class="btn rounded-5 me-2">Find</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <div
+                class="social d-flex align-items-center justify-content-center"
+              >
+                <i
+                  class="fa-brands fa-facebook-f me-3 bg-dark p-4 d-flex align-items-center justify-content-center rounded-circle fs-5"
+                ></i>
+                <i
+                  class="fa-brands fa-twitter me-3 bg-dark p-4 d-flex align-items-center justify-content-center rounded-circle fs-5"
+                ></i>
+                <i
+                  class="fa-brands fa-google-plus-g me-3 bg-dark p-4 d-flex align-items-center justify-content-center rounded-circle fs-5"
+                ></i>
+                <i
+                  class="fa-brands fa-pinterest me-3 bg-dark p-4 d-flex align-items-center justify-content-center rounded-circle fs-5"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright ps-5">
+          <p class="text-secondary pt-5">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
